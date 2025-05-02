@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
             if (photoFile != null) {
                 val photoURI: Uri = FileProvider.getUriForFile(
                     this,
-                    "${packageName}.fileprovider",  // <- Very important
+                    "${packageName}.fileprovider",
                     photoFile
                 )
                 takePictureIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoURI)
